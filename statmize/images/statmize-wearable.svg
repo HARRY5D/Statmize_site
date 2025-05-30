@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3481ed" />
+      <stop offset="100%" stop-color="#00ff7b" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="#121b2e" />
+  <circle cx="200" cy="180" r="100" fill="none" stroke="url(#grad)" stroke-width="8" />
+  <rect x="150" y="160" width="100" height="150" rx="20" fill="none" stroke="url(#grad)" stroke-width="5" />
+  <circle cx="200" cy="140" r="30" fill="url(#grad)" />
+  <text x="200" y="300" font-family="Arial" font-size="24" text-anchor="middle" fill="white">STATmize Wearable</text>
+  <text x="200" y="330" font-family="Arial" font-size="16" text-anchor="middle" fill="white">Smart Sports Feedback</text>
+</svg>

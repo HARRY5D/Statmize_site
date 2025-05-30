@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use | STATmize</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .policy-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .policy-container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .policy-container h2 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+        }
+        
+        .policy-container p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        
+        .policy-container ul {
+            margin-bottom: 1rem;
+            margin-left: 1.5rem;
+            list-style-type: disc;
+        }
+        
+        .policy-container li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .return-link {
+            display: inline-block;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/statmize-logo.svg" alt="STATmize Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <span class="toggle-ball"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section style="padding-top: 150px">
+        <div class="policy-container">
+            <h1>Terms of Use</h1>
+            <p><strong>Last Updated:</strong> May 30, 2025</p>
+            
+            <p>Welcome to STATmize. Please read these Terms of Use carefully before using our website, mobile application, or wearable devices.</p>
+            
+            <h2>Acceptance of Terms</h2>
+            <p>By accessing or using any part of our service, you agree to be bound by these Terms of Use. If you do not agree to all the terms, you may not use our services.</p>
+            
+            <h2>Changes to Terms</h2>
+            <p>We reserve the right to modify these Terms at any time. We will provide notice of significant changes by posting an updated version on our website and updating the "Last Updated" date. Your continued use of our services after any changes constitutes acceptance of those changes.</p>
+            
+            <h2>Account Registration</h2>
+            <p>To use certain features of our services, you may need to create an account. You are responsible for:</p>
+            <ul>
+                <li>Providing accurate and complete information</li>
+                <li>Maintaining the security of your account and password</li>
+                <li>All activities that occur under your account</li>
+            </ul>
+            
+            <h2>Use of Our Products and Services</h2>
+            <p>You agree to use our products and services only for lawful purposes and in accordance with these Terms. You agree not to:</p>
+            <ul>
+                <li>Use our services in any way that violates applicable laws</li>
+                <li>Attempt to gain unauthorized access to any portion of our services</li>
+                <li>Interfere with or disrupt the operation of our services</li>
+                <li>Reverse engineer or attempt to extract the source code of our software</li>
+                <li>Use our services to transmit harmful code or malware</li>
+            </ul>
+            
+            <h2>Intellectual Property</h2>
+            <p>Our services and their contents (including but not limited to software, designs, text, graphics, images, videos, and logos) are owned by STATmize and are protected by copyright, trademark, and other intellectual property laws.</p>
+            
+            <h2>User Content</h2>
+            <p>You retain ownership of any content you submit through our services. By submitting content, you grant us a worldwide, non-exclusive, royalty-free license to use, reproduce, modify, adapt, publish, and display such content in connection with providing our services.</p>
+            
+            <h2>Disclaimer of Warranties</h2>
+            <p>Our services are provided on an "as is" and "as available" basis without warranties of any kind, either express or implied. We do not warrant that our services will be uninterrupted, secure, or error-free.</p>
+            
+            <h2>Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law, STATmize shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to, loss of profits, data, use, or goodwill.</p>
+            
+            <h2>Governing Law</h2>
+            <p>These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which STATmize operates, without regard to its conflict of law provisions.</p>
+            
+            <h2>Contact Us</h2>
+            <p>If you have any questions about these Terms, please contact us at:</p>
+            <p>Email: legal@statmize.com</p>
+            <p>Address: 123 Innovation Drive, Tech City</p>
+            
+            <a href="index.html" class="btn btn-primary return-link">Return to Home</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2025 STATmize. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.querySelector('.theme-toggle');
+        
+        // Check for saved theme preference
+        const getCurrentTheme = () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                return savedTheme;
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+        
+        // Set theme on initial load
+        const currentTheme = getCurrentTheme();
+        if (currentTheme === 'dark') {
+            document.body.classList.replace('light-mode', 'dark-mode');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('light-mode');
+            
+            // Save preference to localStorage
+            const newTheme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+</body>
+</html>

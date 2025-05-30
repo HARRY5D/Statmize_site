@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3481ed" />
+      <stop offset="100%" stop-color="#00ff7b" />
+    </linearGradient>
+  </defs>
+  <circle cx="75" cy="75" r="75" fill="#121b2e" />
+  <circle cx="75" cy="60" r="25" fill="url(#grad)" opacity="0.8" />
+  <path d="M75 85 C55 85, 40 110, 40 135 L110 135 C110 110, 95 85, 75 85 Z" fill="url(#grad)" opacity="0.6" />
+  <text x="75" y="115" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Sarah Williams</text>
+</svg>

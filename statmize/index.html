@@ -1,0 +1,373 @@
+<!-- 
+  STATmize - Smart Sports Wearable Platform
+  A modern, animated, responsive landing website with dark/light mode
+  
+  File structure:
+  - index.html           Main landing page
+  - 404.html             Custom error page
+  - privacy-policy.html  Privacy policy page
+  - terms.html           Terms of use page
+  - css/style.css        Main stylesheet
+  - js/main.js           JavaScript functionality
+  - images/              Image assets
+  - videos/              Video assets
+  - manifest.json        PWA manifest
+  - sw.js                Service worker for offline capabilities
+  - robots.txt           For search engines
+  - sitemap.xml          XML sitemap
+  - .htaccess            Server configurations
+  - README.md            Project documentation
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STATmize - Smarter Sports. Smarter Moves.</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <meta name="description" content="STATmize - A smart sports wearable feedback and coaching platform">
+    <meta name="theme-color" content="#121b2e">
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://statmize.com/">
+    <meta property="og:title" content="STATmize - Smarter Sports. Smarter Moves.">
+    <meta property="og:description" content="STATmize is revolutionizing the way athletes train with smart sensors that provide real-time feedback and coaching insights.">
+    <meta property="og:image" content="https://statmize.com/images/statmize-social-banner.svg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://statmize.com/">
+    <meta property="twitter:title" content="STATmize - Smarter Sports. Smarter Moves.">    <meta property="twitter:description" content="STATmize is revolutionizing the way athletes train with smart sensors that provide real-time feedback and coaching insights.">
+    <meta property="twitter:image" content="https://statmize.com/images/statmize-social-banner.svg">
+    <!-- PWA Support -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-mode">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">            <div class="logo">
+                <img src="images/statmize-logo.svg" alt="STATmize Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#why-choose" class="nav-link">Why Choose Us</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <span class="toggle-ball"></span>
+                </div>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glowing-text">STATmize</h1>
+                <p class="tagline">Smarter Sports. Smarter Moves.</p>
+                <div class="hero-cta">
+                    <a href="#about" class="btn btn-primary">Learn More</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>            <div class="hero-video">
+                <iframe src="videos/hero-placeholder.html" frameborder="0" allowfullscreen></iframe>
+                <div class="hero-overlay"></div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>About STATmize</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <h3>Our Vision</h3>
+                    <p>STATmize is revolutionizing the way athletes train and perform with cutting-edge ESP32-based smart sensors that provide real-time feedback and coaching insights.</p>
+                    <p>Our mission is to democratize access to professional-level sports analytics, making it available to athletes at all levels.</p>
+                    <div class="benefit-statements">
+                        <div class="benefit reveal">
+                            <i class="fas fa-chart-line"></i>
+                            <p>Track movements in real time</p>
+                        </div>
+                        <div class="benefit reveal">
+                            <i class="fas fa-bolt"></i>
+                            <p>Get feedback instantly</p>
+                        </div>
+                        <div class="benefit reveal">
+                            <i class="fas fa-chart-pie"></i>
+                            <p>Analyze performance data</p>
+                        </div>
+                        <div class="benefit reveal">
+                            <i class="fas fa-trophy"></i>
+                            <p>Improve technique efficiently</p>
+                        </div>
+                    </div>
+                </div>                <div class="about-image reveal">
+                    <div class="image-container parallax">
+                        <img src="images/statmize-wearable.svg" alt="STATmize Wearable">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="glass-bg"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Features</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-bluetooth"></i>
+                    </div>
+                    <h3>Bluetooth Connectivity</h3>
+                    <p>Seamlessly connect to your devices for real-time data transmission and analysis.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Upload Support</h3>
+                    <p>Upload and analyze your performance videos for comprehensive feedback.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Smart Motion Detection</h3>
+                    <p>Advanced algorithms identify movement patterns and provide actionable insights.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Sport-Specific Modes</h3>
+                    <p>Tailored analytics for Cricket, Badminton, Tennis, and more sports.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Synchronization</h3>
+                    <p>Access your data from anywhere with secure cloud storage and synchronization.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <h3>Long Battery Life</h3>
+                    <p>Extended usage time between charges for uninterrupted training sessions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Product Gallery</h2>
+                <div class="section-divider"></div>
+            </div>            <div class="gallery-container reveal">
+                <div class="gallery-item">
+                    <img src="images/gallery1.svg" alt="STATmize in action">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery2.svg" alt="STATmize device">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery3.svg" alt="STATmize app interface">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery4.svg" alt="Athlete using STATmize">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section id="why-choose" class="why-choose">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Why Choose STATmize?</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="stats-container">
+                <div class="stat reveal">
+                    <div class="counter" data-count="3">0</div>
+                    <span class="plus">+</span>
+                    <p>Sports</p>
+                </div>
+                <div class="stat reveal">
+                    <div class="counter" data-count="200">0</div>
+                    <span class="plus">+</span>
+                    <p>Hours of Data Collected</p>
+                </div>
+                <div class="stat reveal">
+                    <div class="counter" data-count="85">0</div>
+                    <span class="percent">%</span>
+                    <p>Improvement Rate</p>
+                </div>
+                <div class="stat reveal">
+                    <div class="counter" data-count="24">0</div>
+                    <span class="slash">/</span>
+                    <span>7</span>
+                    <p>Support</p>
+                </div>
+            </div>
+            <div class="testimonials reveal">
+                <h3>What Athletes Say</h3>
+                <div class="testimonial-slider">
+                    <div class="testimonial active">
+                        <div class="testimonial-content">
+                            <p>"STATmize has completely transformed my training routine. The real-time feedback helped me correct my technique issues I wasn't even aware of."</p>                            <div class="testimonial-author">
+                                <img src="images/testimonial1.svg" alt="Testimonial Author">
+                                <div class="author-info">
+                                    <h4>Alex Johnson</h4>
+                                    <p>Badminton Player</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"As a coach, STATmize gives me valuable insights into my team's performance that were previously impossible to quantify. It's a game-changer!"</p>                            <div class="testimonial-author">
+                                <img src="images/testimonial2.svg" alt="Testimonial Author">
+                                <div class="author-info">
+                                    <h4>Sarah Williams</h4>
+                                    <p>Tennis Coach</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"The sport-specific modes are incredibly accurate. The cricket analysis helped me improve my bowling technique within weeks."</p>                            <div class="testimonial-author">
+                                <img src="images/testimonial3.svg" alt="Testimonial Author">
+                                <div class="author-info">
+                                    <h4>Raj Patel</h4>
+                                    <p>Cricket Player</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <span class="testimonial-dot active"></span>
+                    <span class="testimonial-dot"></span>
+                    <span class="testimonial-dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Get In Touch</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info reveal">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@statmize.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Innovation Drive, Tech City</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-details reveal">
+                    <h3>Get in Touch Today</h3>
+                    <p>Interested in learning more about STATmize? Our team is ready to help you improve your sports performance with our cutting-edge wearable technology.</p>
+                    
+                    <div class="contact-actions">                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@statmize.com&su=Inquiry%20About%20STATmize&body=Hello%20STATmize%20Team%2C%0A%0AI'm%20interested%20in%20learning%20more%20about%20your%20sports%20wearable%20technology.%0A%0APlease%20contact%20me%20with%20additional%20information.%0A%0AThank%20you%2C%0A" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Email Us via Gmail
+                        </a>
+                        <a href="tel:+15551234567" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                    </div>
+                    
+                    <div class="business-hours">
+                        <h4><i class="fas fa-clock"></i> Business Hours</h4>
+                        <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                        <p>Saturday - Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">                <div class="footer-logo">
+                    <img src="images/statmize-logo.svg" alt="STATmize Logo">
+                    <p>Smarter Sports. Smarter Moves.</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#why-choose">Why Choose Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>                <div class="footer-legal">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Use</a>
+                </div>
+
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 STATmize. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

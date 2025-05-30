@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3481ed" />
+      <stop offset="100%" stop-color="#00ff7b" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="300" fill="#121b2e" />
+  <text x="250" y="150" font-family="Arial" font-size="24" text-anchor="middle" fill="white">STATmize device</text>
+  <rect x="100" y="170" width="300" height="5" fill="url(#grad)" />
+  <rect x="150" y="90" width="200" height="130" rx="10" stroke="url(#grad)" stroke-width="4" fill="none" />
+  <circle cx="250" cy="80" r="20" fill="url(#grad)" />
+</svg>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | STATmize</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .policy-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .policy-container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .policy-container h2 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+        }
+        
+        .policy-container p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        
+        .policy-container ul {
+            margin-bottom: 1rem;
+            margin-left: 1.5rem;
+            list-style-type: disc;
+        }
+        
+        .policy-container li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .return-link {
+            display: inline-block;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/statmize-logo.svg" alt="STATmize Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <span class="toggle-ball"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section style="padding-top: 150px">
+        <div class="policy-container">
+            <h1>Privacy Policy</h1>
+            <p><strong>Last Updated:</strong> May 30, 2025</p>
+            
+            <p>Thank you for using STATmize. This Privacy Policy describes how STATmize ("we", "us", or "our") collects, uses, and shares your personal information when you visit our website, use our mobile application, or interact with our smart sports wearable devices.</p>
+            
+            <h2>Information We Collect</h2>
+            <p>We collect information in the following ways:</p>
+            <ul>
+                <li><strong>Information you provide to us directly:</strong> When you register for an account, purchase a product, contact customer support, or otherwise interact with our services, we collect information you provide such as your name, email address, shipping address, and payment information.</li>
+                <li><strong>Device information:</strong> We collect data from your STATmize device, including performance metrics, movement patterns, and usage statistics.</li>
+                <li><strong>App usage data:</strong> We collect information about how you use our app, including features accessed, time spent, and preferences.</li>
+                <li><strong>Website analytics:</strong> We collect standard internet log information and visitor behavior information when you visit our website.</li>
+            </ul>
+            
+            <h2>How We Use Your Information</h2>
+            <p>We use your information for the following purposes:</p>
+            <ul>
+                <li>To provide and improve our products and services</li>
+                <li>To personalize your experience with tailored coaching insights</li>
+                <li>To communicate with you about your account, orders, and updates</li>
+                <li>To analyze performance trends and develop new features</li>
+                <li>To ensure the security of our products and protect against fraud</li>
+            </ul>
+            
+            <h2>How We Share Your Information</h2>
+            <p>We do not sell your personal information. We may share your information with:</p>
+            <ul>
+                <li>Service providers who perform services on our behalf</li>
+                <li>Partners with whom you choose to share your data (e.g., coaches)</li>
+                <li>Law enforcement or other parties when required by law</li>
+            </ul>
+            
+            <h2>Your Rights</h2>
+            <p>Depending on your location, you may have the following rights regarding your data:</p>
+            <ul>
+                <li>Access to the personal information we have about you</li>
+                <li>Correction of inaccurate information</li>
+                <li>Deletion of your personal information</li>
+                <li>Restriction or objection to our processing of your data</li>
+                <li>Data portability</li>
+            </ul>
+            
+            <h2>Data Security</h2>
+            <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, destruction, or alteration.</p>
+            
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+            
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+            <p>Email: privacy@statmize.com</p>
+            <p>Address: 123 Innovation Drive, Tech City</p>
+            
+            <a href="index.html" class="btn btn-primary return-link">Return to Home</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2025 STATmize. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.querySelector('.theme-toggle');
+        
+        // Check for saved theme preference
+        const getCurrentTheme = () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                return savedTheme;
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+        
+        // Set theme on initial load
+        const currentTheme = getCurrentTheme();
+        if (currentTheme === 'dark') {
+            document.body.classList.replace('light-mode', 'dark-mode');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('light-mode');
+            
+            // Save preference to localStorage
+            const newTheme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+</body>
+</html>

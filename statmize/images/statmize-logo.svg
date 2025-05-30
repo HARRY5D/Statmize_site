@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <defs>
+    <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3481ed" />
+      <stop offset="100%" stop-color="#00ff7b" />
+    </linearGradient>
+  </defs>
+  <style>
+    .logo-text { 
+      font-family: 'Arial', sans-serif; 
+      font-weight: 700; 
+      font-size: 32px; 
+      fill: url(#logo-gradient);
+    }
+    .tagline {
+      font-family: 'Arial', sans-serif;
+      font-size: 12px;
+      fill: #3481ed;
+    }
+  </style>
+  <text x="10" y="40" class="logo-text">STATmize</text>
+  <text x="15" y="55" class="tagline">Smarter Sports. Smarter Moves.</text>
+</svg>

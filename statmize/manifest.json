@@ -1,0 +1,17 @@
+{
+  "name": "STATmize",
+  "short_name": "STATmize",
+  "description": "Smart sports wearable feedback and coaching platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121b2e",
+  "theme_color": "#121b2e",
+  "icons": [
+    {
+      "src": "images/favicon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
