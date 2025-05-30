@@ -42,8 +42,11 @@ statmize/
 ## Getting Started
 
 1. Clone the repository
-2. Open index.html in your browser
-3. For development, use a local server like Live Server for VS Code
+   git clone https://github.com/yourusername/statmize.git
+2. Navigate to project directory:
+   cd statmize
+4. Open index.html in your browser
+6. For development, use a local server like Live Server for VS Code
 
 ## Customization
 
@@ -81,6 +84,9 @@ To add a new section:
 
 © 2025 STATmize. All rights reserved.
 
----
+Contact
+For inquiries about STATmize:
 
-Created by [Your Name] for STATmize
+Email: info@statmize.com
+Website: statmize.com
+---
